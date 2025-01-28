@@ -1,0 +1,31 @@
+import { Flex } from "@chakra-ui/react";
+import "./App.css";
+import { useEffect, useState } from "react";
+import Preloader from "./Components/Preloader/Preloader";
+import MainLayout from "./Layout/MainLayout";
+
+function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  });
+  return (
+    <Flex
+      bg={"brand.mainBg"}
+      minH={"100vh"}
+      overflowX={"hidden"}
+      w={"100%"}
+      flexDir={"column"}
+      alignItems={"center"}
+      justifyContent={"center"}
+
+      // pb={20}
+    >
+      {loading ? <Preloader /> : <MainLayout />}
+    </Flex>
+  );
+}
+
+export default App;
