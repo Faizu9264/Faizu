@@ -1,15 +1,9 @@
-import {
-  Flex,
-  Text,
-  Grid,
-  Image,
-  Divider,
-} from "@chakra-ui/react";
+import { Flex, Text, Grid, Image, Divider } from "@chakra-ui/react";
 
 import bootstrap from "../assets/Skills/Bootstrap.png";
 import chakraUi from "../assets/Skills/chakraui.png";
 import css from "../assets/Skills/CSS3.png";
-import js from "../assets/Skills/javaScript.png";
+import javascript from "../assets/Skills/javaScript.png";
 import ethereum from "../assets/Skills/ethereum.png";
 import express from "../assets/Skills/expressw.png";
 import figma from "../assets/Skills/Figma.png";
@@ -44,7 +38,7 @@ const Skills = () => {
         <motion.div
           initial={{ width: 0 }}
           whileInView={{
-            width: '100%', // Slide in to its original position
+            width: "100%", // Slide in to its original position
             transition: {
               duration: 1, // Animation duration
               delay: 0.5,
@@ -168,7 +162,7 @@ const skillData = [
   { icon: react, name: "React" },
   { icon: html, name: "HTML" },
   { icon: css, name: "CSS" },
-  { icon: js, name: "Javascript" },
+  { icon: javascript, name: "Javascript" },
   { icon: bootstrap, name: "Bootstrap" },
   { icon: chakraUi, name: "Chakra UI" },
   { icon: nodejs, name: "Node.js" },
