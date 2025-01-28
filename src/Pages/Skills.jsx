@@ -2,41 +2,9 @@ import {
   Flex,
   Text,
   Grid,
-  GridItem,
-  Icon,
-  Tooltip,
-  Spacer,
   Image,
   Divider,
 } from "@chakra-ui/react";
-import React from "react";
-import { AiOutlineHtml5, AiOutlinePython } from "react-icons/ai";
-import { DiNodejs } from "react-icons/di";
-import {
-  FaCss3,
-  FaEthereum,
-  FaFigma,
-  FaGitAlt,
-  FaGithub,
-  FaHtml5,
-  FaJs,
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa6";
-import { GrCss3, GrReactjs } from "react-icons/gr";
-import { ImHtmlFive2 } from "react-icons/im";
-import { LiaJsSquare } from "react-icons/lia";
-import { MdHtml } from "react-icons/md";
-import { RiBootstrapLine } from "react-icons/ri";
-import {
-  SiBlockchaindotcom,
-  SiChakraui,
-  SiExpress,
-  SiMongodb,
-  SiMysql,
-  SiSolidity,
-} from "react-icons/si";
-import { VscCode, VscVscode } from "react-icons/vsc";
 
 import bootstrap from "../assets/Skills/Bootstrap.png";
 import chakraUi from "../assets/Skills/chakraui.png";
@@ -55,7 +23,6 @@ import solidity from "../assets/Skills/Solidity.png";
 import vscode from "../assets/Skills/vsCode.png";
 import mongo from "../assets/Skills/MongoDB.png";
 import mysql from "../assets/Skills/MySQL.png";
-import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
 import TypewriterText from "../Components/TypewriterText";
 
