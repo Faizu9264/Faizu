@@ -3,7 +3,7 @@ import { Flex, Text, Grid, Image, Divider } from "@chakra-ui/react";
 import bootstrap from "../assets/Skills/Bootstrap.png";
 import chakraUi from "../assets/Skills/chakraui.png";
 import css from "../assets/Skills/CSS3.png";
-import javascript from "../assets/Skills/javaScript.png";
+import javascript from "../assets/Skills/javascript.png";
 import ethereum from "../assets/Skills/ethereum.png";
 import express from "../assets/Skills/expressw.png";
 import figma from "../assets/Skills/Figma.png";
