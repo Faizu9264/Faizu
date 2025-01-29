@@ -23,7 +23,6 @@ const About = () => {
       id="about"
       py={{ base: 10, md: 12, lg: 20 }}
       flexDir={{ base: "column", md: "row" }}
-      // pb={{ xl: 8, base: 10 }}
     >
       {/* Left Side */}
       <Flex

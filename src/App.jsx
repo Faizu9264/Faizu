@@ -3,6 +3,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Preloader from "./Components/Preloader/Preloader";
 import MainLayout from "./Layout/MainLayout";
+// import ThemeSwitcher from "./Components/ThemeSwitcher";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,9 +21,10 @@ function App() {
       flexDir={"column"}
       alignItems={"center"}
       justifyContent={"center"}
-
+      className="font-link"
       // pb={20}
     >
+      {/* <ThemeSwitcher /> */}
       {loading ? <Preloader /> : <MainLayout />}
     </Flex>
   );

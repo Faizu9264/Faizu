@@ -33,13 +33,12 @@ const Titlename = () => {
       </Code> */}
       <Box
         position="relative"
-        width={{ xl: "50%", lg: "80%", md: "400px", base: "90%" }}
+        width={{ xl: "50%", lg: "80%", md: "400px", base: "100%" }}
         height={{ base: "40px", md: "50px" }}
         overflow="hidden"
-        // border="1px solid #ccc"
         display="flex"
-        justifyContent="center"
-        alignItems="center"
+        // justifyContent="center"
+        // alignItems="center"
       >
         {messages.map((message, index) => (
           <Code
@@ -57,7 +56,7 @@ const Titlename = () => {
             transform={
               currentIndex === index ? "translateY(0)" : "translateY(0)"
             }
-            fontSize={{ md: "3xl", base: "2xl" }}
+            fontSize={{ md: "3xl", base: "23px" }}
             fontWeight="bold"
             color={"#33FFCC"}
             bg={"none"}

@@ -31,7 +31,7 @@ const Home = () => {
       <Flex
         w={{ lg: "60%", base: "85%" }}
         flexDir={"column"}
-        gap={{ md: 5, base: 4 }}
+        gap={{ md: 5, base: 5 }}
         pl={{ xl: 28, lg: 20 }}
       >
         <motion.div
@@ -47,7 +47,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <Text
-            fontSize={{ lg: 50, md: 40, base: 30 }}
+            fontSize={{ lg: 50, md: 40, base: 28 }}
             fontWeight={600}
             color="brand.white"
           >

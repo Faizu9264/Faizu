@@ -23,6 +23,8 @@ const theme = extendTheme({
     heading: `Poppins, sans-serif,${base.fonts?.heading}`,
     body: `Poppins, sans-serif,${base.fonts?.body}`,
   },
+  initialColorMode: "dark",
+  useSystemColorMode: false,
 });
 
 export default theme;
