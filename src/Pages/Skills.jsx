@@ -29,7 +29,7 @@ const Skills = () => {
       justifyContent={"center"}
       id="skills"
       alignItems={"center"}
-      minH={{md: "100vh", base:"auto"}}
+      // minH={{md: "100vh", base:"auto"}}
       gap={4}
       py={{ base: 10, md: 20 }}
     >

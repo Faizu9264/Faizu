@@ -33,7 +33,7 @@ const Titlename = () => {
       </Code> */}
       <Box
         position="relative"
-        width={{ xl: "50%", lg: "80%", md: "400px", base: "80%" }}
+        width={{ xl: "50%", lg: "80%", md: "400px", base: "90%" }}
         height={{ base: "40px", md: "50px" }}
         overflow="hidden"
         // border="1px solid #ccc"

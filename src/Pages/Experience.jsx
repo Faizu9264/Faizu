@@ -13,7 +13,7 @@ const Experience = () => {
       justifyContent={"center"}
       id="experience"
       alignItems={"center"}
-      minH={{ md: "100vh", base: "auto" }}
+      // minH={{ md: "100vh", base: "auto" }}
       gap={10}
       py={20}
       bg={"rgba(22, 22, 22, 0.3)"}

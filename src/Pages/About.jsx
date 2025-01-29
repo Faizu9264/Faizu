@@ -15,15 +15,15 @@ const About = () => {
     <Flex
       bgImg={bg}
       bgSize="cover"
-      minH={{ lg: "100vh", base: "auto" }}
+      // minH={{ lg: "100vh", base: "auto" }}
       w="100%"
       alignItems="center"
       bgBlendMode={"darken"}
       color="white"
       id="about"
-      py={{ base: 10, md: 12, lg: -20 }}
+      py={{ base: 10, md: 12, lg: 20 }}
       flexDir={{ base: "column", md: "row" }}
-      pb={{ xl: 8, base: 10 }}
+      // pb={{ xl: 8, base: 10 }}
     >
       {/* Left Side */}
       <Flex

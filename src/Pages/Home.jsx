@@ -19,12 +19,12 @@ const Home = () => {
 
   return (
     <Flex
-      minH={{ lg: "90vh", base: "auto" }}
+      // minH={{ lg: "90vh", base: "auto" }}
       alignItems={"center"}
       id="home"
       alignSelf={"center"}
       flexDir={{ base: "column", lg: "row" }}
-      py={{ base: 10, lg: 0 }}
+      py={{ base: 10, lg: 20 }}
     >
       {/* Left Side starts */}
 
@@ -185,6 +185,7 @@ const Home = () => {
         w={{ lg: "40%", md: "60%", base: "100%" }}
         justifyContent={"center"}
         alignItems={"center"}
+        pl={{base:10,lg:0}}
       >
         <Image src={right} alt="right" />
       </Flex>
