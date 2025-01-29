@@ -1,13 +1,6 @@
-import {
-  Button,
-  Flex,
-  Icon,
-  Image,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
-import { BsArrowDown,  BsGithub } from "react-icons/bs";
-import {  FaLinkedinIn } from "react-icons/fa";
+import { Button, Flex, Icon, Image, Spacer, Text } from "@chakra-ui/react";
+import { BsArrowDown, BsGithub } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 import right from "../assets/homeright.png";
 import Titlename from "../Components/TitleName/Titlename";
 import { motion } from "framer-motion";
@@ -26,7 +19,7 @@ const Home = () => {
 
   return (
     <Flex
-      height={{ lg: "90vh" }}
+      minH={{ lg: "90vh", base: "auto" }}
       alignItems={"center"}
       id="home"
       alignSelf={"center"}

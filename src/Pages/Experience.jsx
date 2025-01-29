@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Divider,  Icon } from "@chakra-ui/react";
+import { Flex, Text, Image, Divider, Icon } from "@chakra-ui/react";
 import dev from "../assets/Skills/dev.svg";
 import teach from "../assets/Skills/teach.svg";
 import TypewriterText from "../Components/TypewriterText";
@@ -13,19 +13,18 @@ const Experience = () => {
       justifyContent={"center"}
       id="experience"
       alignItems={"center"}
-      minH={"100vh"}
+      minH={{ md: "100vh", base: "auto" }}
       gap={10}
       py={20}
       bg={"rgba(22, 22, 22, 0.3)"}
       backdropFilter={"blur(2px)"}
-
     >
       <Flex flexDir={"column"}>
         <TypewriterText text={text} />
         <motion.div
           initial={{ width: 0 }}
           whileInView={{
-            width: '100%', // Slide in to its original position
+            width: "100%", // Slide in to its original position
             transition: {
               duration: 1, // Animation duration
               delay: 0.8,
@@ -37,11 +36,17 @@ const Experience = () => {
         </motion.div>
       </Flex>
       {/* Experience Section */}
-      <Flex flexDir={"column"} alignItems={"center"} w={"100%"} >
+      <Flex flexDir={"column"} alignItems={"center"} w={"100%"}>
         {/* First Experience */}
         {experienceData.map((data, i) => {
           return (
-            <Flex gap={{md:2,base:1}} key={i} w={{md:"100%",base:"90%"}} justifyContent={"center"}  m={'auto'}>
+            <Flex
+              gap={{ md: 2, base: 1 }}
+              key={i}
+              w={{ md: "100%", base: "90%" }}
+              justifyContent={"center"}
+              m={"auto"}
+            >
               {/* First Section Starts */}
               <motion.div
                 initial={{ opacity: 0, y: 5 }}
@@ -59,15 +64,16 @@ const Experience = () => {
                   bg={"brand.buttonGreen"}
                   h={{ md: 8, base: 7 }}
                   alignItems={"center"}
-                  width={{ lg: 180, md: 130, base: '100px' }}
+                  width={{ lg: 180, md: 130, base: "100px" }}
                   borderRadius={20}
                   mt={2}
                   justifyContent={"center"}
-                  display={{base:'none',md:"flex"}}
+                  display={{ base: "none", md: "flex" }}
                 >
                   <Text
                     fontSize={{ lg: "14px", md: "12px", base: "10px" }}
                     fontWeight={600}
+                    color={"black"}
                   >
                     {data.period}
                   </Text>
@@ -134,40 +140,41 @@ const Experience = () => {
                 color={"white"}
                 flexDir={"column"}
                 ml={{ md: 4, base: 2 }}
-                w={{ xl: "35%",lg:"45%",md:'50%',base:"100%" }}
+                w={{ xl: "35%", lg: "45%", md: "50%", base: "100%" }}
                 mb={5}
               >
-                  <motion.div
-                initial={{ opacity: 0, y: 5 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0, // Slide in to its original position
-                  transition: {
-                    duration: 0.5, // Animation duration
-                    delay: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-              >
-                <Flex
-                  bg={"brand.buttonGreen"}
-                  h={{ md: 8, base: 7 }}
-                  alignItems={"center"}
-                  width={{ lg: 180, md: 130, base: 120 }}
-                  borderRadius={20}
+                <motion.div
+                  initial={{ opacity: 0, y: 5 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0, // Slide in to its original position
+                    transition: {
+                      duration: 0.5, // Animation duration
+                      delay: 0.5,
+                    },
+                  }}
+                  viewport={{ once: true }}
+                >
+                  <Flex
+                    bg={"brand.buttonGreen"}
+                    h={{ md: 8, base: 7 }}
+                    alignItems={"center"}
+                    width={{ lg: 180, md: 130, base: 120 }}
+                    borderRadius={20}
                     mt={1}
                     mb={2}
-                  justifyContent={"center"}
-                  display={{base:'flex',md:"none"}}
-                >
-                  <Text
-                    fontSize={{ lg: "14px", md: "12px", base: "10px" }}
-                    fontWeight={600}
+                    justifyContent={"center"}
+                    display={{ base: "flex", md: "none" }}
                   >
-                    {data.period}
-                  </Text>
-                </Flex>
-              </motion.div>
+                    <Text
+                      fontSize={{ lg: "14px", md: "12px", base: "10px" }}
+                      fontWeight={600}
+                      color={"black"}
+                    >
+                      {data.period}
+                    </Text>
+                  </Flex>
+                </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 5 }}
                   whileInView={{
@@ -190,7 +197,11 @@ const Experience = () => {
                     {data.company}
                   </Text>
                 </motion.div>
-                <Flex flexDir={"column"} width={"100%"} pl={{lg:4,md:2,base:1}}>
+                <Flex
+                  flexDir={"column"}
+                  width={"100%"}
+                  pl={{ lg: 4, md: 2, base: 1 }}
+                >
                   {data.description.map((desc, i) => {
                     return (
                       <motion.div
@@ -206,12 +217,15 @@ const Experience = () => {
                         viewport={{ once: true }}
                         key={i}
                       >
-                        <Flex alignItems={'center'} gap={2} w={{lg:"100%",md:'100%',base:"95%"}}>
-                          <Icon as={CiStar } color={"#33FFCC"}/>
+                        <Flex
+                          alignItems={"center"}
+                          gap={2}
+                          w={{ lg: "100%", md: "100%", base: "95%" }}
+                        >
+                          <Icon as={CiStar} color={"#33FFCC"} />
                           <Text
                             fontSize={{ md: "14px", base: "12px" }}
                             mt={2}
-                            
                             color={"whiteAlpha.800"}
                           >
                             {desc}

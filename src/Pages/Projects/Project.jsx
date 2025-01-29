@@ -1,4 +1,4 @@
-import {  Divider, Flex, Grid } from "@chakra-ui/react";
+import { Divider, Flex, Grid } from "@chakra-ui/react";
 import TypewriterText from "../../Components/TypewriterText";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
