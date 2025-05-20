@@ -7,8 +7,9 @@ const Titlename = () => {
     "MERN Stack Developer",
     "Full Stack Developer",
     "Javascript Developer",
-    "Frontend Developer",
-    "Web Designer",
+    "Backend Developer",
+    "Web Developer",
+    "Content Creator",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -1,8 +1,9 @@
-import { Flex, Icon, Image, Text } from "@chakra-ui/react";
-import logo from "../../assets/vector.png";
+import { Flex, Icon, Text } from "@chakra-ui/react";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import { FaYoutube } from "react-icons/fa";
+import { SiBuymeacoffee } from "react-icons/si";
 
 const Footer = () => {
   // to get current year
@@ -20,15 +21,13 @@ const Footer = () => {
       mb={{ base: 20, md: 0 }}
       w={"100%"}
     >
-      <Image
-        src={logo}
-        alt="logo"
-        w={{ md: 100, base: 90 }}
-        objectFit={"contain"}
-      />
+      {/* Logo or Name */}
+      <Text fontSize={{ md: 28, base: 22 }} fontWeight={700} color="#33FFCC">
+        Faizu Rahman
+      </Text>
       {/* Copyright */}{" "}
       <Text color={"white"} fontSize={{ md: 16, base: 14 }}>
-        © {year} Aneesha M S. All rights reserved.{" "}
+        © {year} Faizu Rahman. All rights reserved.{" "}
       </Text>
       {/* Logo */}
       <Flex gap={4}>
@@ -65,10 +64,12 @@ const Footer = () => {
 export default Footer;
 
 const footerIcon = [
-  { iconName: CgMail, link: "mailto:msaneesha422@gmail.com" },
+  { iconName: CgMail, link: "mailto:codecodersofficial@gmail.com" },
   {
     iconName: FaLinkedinIn,
-    link: "https://www.linkedin.com/in/aneeshams2311/",
+    link: "https://www.linkedin.com/in/faizu-rahman-a496aa256/",
   },
-  { iconName: BsGithub, link: "https://github.com/AneeshaMS" },
+  { iconName: BsGithub, link: "https://github.com/Faizu9264" },
+  { iconName: FaYoutube, link: "https://www.youtube.com/@CodeCodersYT" },
+  { iconName: SiBuymeacoffee, link: "https://buymeacoffee.com/faizurahman" },
 ];

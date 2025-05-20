@@ -2,11 +2,14 @@ import { Divider, Flex, Grid } from "@chakra-ui/react";
 import TypewriterText from "../../Components/TypewriterText";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import p1 from "../../assets/projects/project1.png";
-import p2 from "../../assets/projects/project2.png";
-import p3 from "../../assets/projects/project3.png";
-import p4 from "../../assets/projects/project4.png";
-import p5 from "../../assets/projects/project5.png";
+import hfHub from "../../assets/projects/hf-hub.png";
+import staycation from "../../assets/projects/staycation.png";
+import emotionDetector from "../../assets/projects/emotiondetector.jpg";
+import imaginify from "../../assets/projects/imaginify.png";
+import shopifyProductListing from "../../assets/projects/shopifyProductListing.png";
+import goatGame from "../../assets/projects/goatGame.jpg";
+import invoiceDashboard from "../../assets/projects/invoiceDashboard.jpg";
+import todolist from "../../assets/projects/todolist.png";
 
 const Project = () => {
   const text = "P r o j e c t s ".split(" ");
@@ -48,77 +51,68 @@ const Project = () => {
         gap={{ xl: 10, lg: 16, md: 10, base: 5 }}
       >
         <ProjectCard
-          title={"Media Streaming Application"}
+          title={"H&F Hub"}
           description={
-            "A MEAN stack Media Streaming Application where admins can upload and manage video content, and users can browse and stream videos seamlessly. It features secure user management, efficient video organization, and a responsive interface for smooth content delivery."
+            "An E-commerce site built with MongoDB, Express, Node.js, and EJS. It uses MVC architecture, has NodeMailer for OTP, Razorpay for payments, and an admin dashboard for managing the platform."
           }
-          image={p1}
-          stack={[
-            "Html",
-            "CSS",
-            "JS",
-            "Nodejs",
-            "Angular",
-            "Express",
-            "MongoDB",
-          ]}
+          image={hfHub}
+          stack={["Node.js", "Express", "MongoDB", "EJS", "Razorpay", "CSS", "Multer"]}
         />
         <ProjectCard
-          title={"ICT Academy Kerala Website"}
+          title={"StayCation"}
           description={
-            "A revamped ICTAK Academy website built with the MEAN stack features dedicated modules for course management and student enrollment. Admins can add, update, and manage courses and related details, while students can explore courses, view details, and enroll easily through a dynamic and user-friendly interface."
+            "A hotel booking platform built with MongoDB, Express, Node.js, React, and Redux. It uses clean architecture, features Google One-Tap Login, Mapbox search, Stripe for payments, and a powerful admin dashboard."
           }
-          image={p3}
-          stack={[
-            "Html",
-            "CSS",
-            "JS",
-            "Nodejs",
-            "Angular",
-            "Express",
-            "MongoDB",
-          ]}
+          image={staycation}
+          stack={["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe", "Mapbox"]}
         />
         <ProjectCard
-          title={"Weather Application"}
+          title={"Emotion Detector"}
           description={
-            "A Weather App using RapidAPI provides real-time weather updates and forecasts. Users can search for locations to view detailed weather conditions, including temperature, humidity, and wind speed, through a sleek and responsive interface. Designed for accuracy and ease of use."
+            "A real-time emotion detection app built using React, TensorFlow.js, Face API, and WebCam. It identifies emotions from facial expressions and displays them instantly on the screen."
           }
-          image={p2}
-          stack={[
-            "Html",
-            "CSS",
-            "JS",
-            "Nodejs",
-            "Angular",
-            "Express",
-            "MongoDB",
-            "Rapid API",
-          ]}
+          image={emotionDetector}
+          stack={["React", "TensorFlow.js", "Face API", "WebCam", "Emotion", "Age", "Gender"]}
         />
         <ProjectCard
-          title={"Car Rental DApp"}
+          title={"IMAGINIFY"}
           description={
-            "A Car Rental DApp built on Ethereum enables secure, decentralized car rental services. Using smart contracts, users can browse available cars, book rentals transparently, while ensuring trust and immutability. The platform offers a user-friendly interface for seamless interaction with the blockchain."
+            "A SaaS application built with Next.js, Clerk, Radix UI, Stripe, Cloudinary, MongoDB, React, Tailwind CSS, and TypeScript. It supports GitHub and Google login via Clerk, offering features like Image Restore, Fill, Object Remove, Object Recolor and BG Removal."
           }
-          image={p4}
-          stack={[
-            "MERN Stack",
-            "Solidity",
-            "Ether js",
-            "Ethereum",
-            "Blockchain",
-            "Hardhat",
-            "Metamask",
-          ]}
+          image={imaginify}
+          stack={["Next.js", "Clerk", "Stripe", "Cloudinary", "MongoDB", "Tailwind", "TypeScript"]}
         />
         <ProjectCard
-          title={"Honey Supplychain"}
+          title={"Shopify Product Listing"}
           description={
-            "A Honey Supply Chain system built on Hyperledger Fabric ensures transparency and traceability in honey production and distribution. It tracks every stage, from beekeeping to final delivery, using a secure, tamper-proof ledger. Stakeholders can verify product authenticity, enhancing trust and efficiency in the supply chain."
+            "A product listing web application built with Next.js and Shopify Polaris. Developed as a machine task, it features a product table, advanced filtering, error handling, and the ability to add new products at the top. Got hired. 🤩"
           }
-          image={p5}
-          stack={["Html", "GO", "MiniFab", "Hyperledger Fabric"]}
+          image={shopifyProductListing}
+          stack={["Next.js", "Shopify Polaris", "React", "Vercel", "GitHub"]}
+        />
+        <ProjectCard
+          title={"Goat Game"}
+          description={
+            "A fun web-based game built with JavaScript and Canvas API. Features scoring, levels, and sound effects."
+          }
+          image={goatGame}
+          stack={["JavaScript", "Canvas API", "HTML", "CSS"]}
+        />
+        <ProjectCard
+          title={"Invoice Dashboard"}
+          description={
+            "A dashboard for managing invoices, clients, and payments. Built with React and Node.js."
+          }
+          image={invoiceDashboard}
+          stack={["React", "Node.js", "MongoDB", "Express"]}
+        />
+        <ProjectCard
+          title={"Todo List"}
+          description={
+            "A simple and effective todo list app with drag-and-drop and persistent storage."
+          }
+          image={todolist}
+          stack={["React", "LocalStorage", "CSS"]}
         />
       </Grid>
     </Flex>

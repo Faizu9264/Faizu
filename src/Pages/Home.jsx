@@ -2,16 +2,16 @@ import { Button, Flex, Icon, Image, Spacer, Text } from "@chakra-ui/react";
 import { BsArrowDown, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import right from "../assets/homeright.png";
+import resume from "../assets/Faizu_Resume.pdf"; // Update with your resume filename if available
 import Titlename from "../Components/TitleName/Titlename";
 import { motion } from "framer-motion";
-import resume from "../assets/Aneesha_Resume_2025.pdf";
 
 const Home = () => {
   const handleDownload = () => {
     const pdfUrl = resume;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Aneesha_Resume.pdf"; // specify the filename
+    link.download = "Faizu_Resume.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -51,7 +51,8 @@ const Home = () => {
             fontWeight={600}
             color="brand.white"
           >
-            Hello, I&apos;m <span style={{ color: "#33FFCC" }}>Aneesha!</span>
+            Hello, I&apos;m{" "}
+            <span style={{ color: "#33FFCC" }}>Faizu Rahman!</span>
           </Text>
         </motion.div>
 
@@ -82,14 +83,37 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <Text
+            fontSize={{ md: 22, base: 16 }}
+            color="#33FFCC"
+            fontWeight={700}
+          >
+            Full Stack Developer | AI-Powered Web Builder | Founder of CodeCoders
+          </Text>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{
+            opacity: 1,
+            y: 0, // Slide in to its original position
+            transition: {
+              duration: 0.5, // Animation duration
+              delay: 0.7,
+            },
+          }}
+          viewport={{ once: true }}
+        >
+          <Text
             fontSize={{ xl: 18, md: 16, base: 14 }}
             color="white"
             lineHeight={1.5}
             w={{ xl: "80%", md: "90%" }}
           >
-            I build modern, responsive websites and mobile apps that deliver
-            seamless user experiences. With a passion for clean code and
-            innovative solutions, I turn ideas into reality.
+            Software Developer at Axorbit Technologies Pvt Ltd. Built a
+            feature-rich Cosmetics E-commerce Platform (Sanity CMS, Clerk,
+            Geolocation, AWS Lambda). Founder of CodeCoders.in (AI developer
+            toolbox). Brototype Bootcamp Graduate. AI/automation explorer,
+            YouTuber (CodeCoders), and passionate about building real-world
+            solutions with modern web tech.
           </Text>
         </motion.div>
         {/* Button */}
@@ -147,14 +171,13 @@ const Home = () => {
                 borderRadius={50}
                 borderColor={"brand.buttonGreen"}
                 onClick={() => {
-                  window.location.href = "https://github.com/AneeshaMS";
+                  window.location.href = "https://github.com/Faizu9264";
                 }}
                 cursor={"pointer"}
               >
                 <Icon as={BsGithub} boxSize={7} color={"brand.buttonGreen"} />
               </Flex>
               {/* Linkedin icon */}
-
               <Flex
                 border={"1px solid"}
                 alignItems={"center"}
@@ -163,8 +186,7 @@ const Home = () => {
                 borderRadius={50}
                 borderColor={"brand.buttonGreen"}
                 onClick={() => {
-                  window.location.href =
-                    "https://www.linkedin.com/in/aneeshams2311/";
+                  window.location.href = "https://www.linkedin.com/in/faizu-rahman-a496aa256/";
                 }}
                 cursor={"pointer"}
               >
@@ -185,7 +207,7 @@ const Home = () => {
         w={{ lg: "40%", md: "60%", base: "100%" }}
         justifyContent={"center"}
         alignItems={"center"}
-        pl={{base:10,lg:0}}
+        pl={{ base: 10, lg: 0 }}
       >
         <Image src={right} alt="right" />
       </Flex>

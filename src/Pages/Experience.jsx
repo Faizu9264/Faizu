@@ -250,27 +250,78 @@ export default Experience;
 
 const experienceData = [
   {
-    company: "TrackGenesis Pvt Lmt",
-    role: "Software Developer",
-    icon: dev,
-    period: "Jul 2023 - Present",
+    title: "Full Stack Developer",
+    company: "Axorbit Technologies Pvt Ltd",
+    icon: dev, // You may want to update the icon as needed
+    period: "Jan 2025 - Present",
     description: [
-      "Specialized in MERN stack development with hands-on experience in building full-stack applications.",
-      "Gained knowledge in blockchain technologies, including Ethereum and Hyperledger and  React Native for mobile application development.",
-      "Experienced in developing applications from scratch, covering design, development, testing, and documentation.",
-      "These skills have enhanced my problem-solving abilities, broadened my technical expertise, and strengthened my capability to deliver end-to-end software solutions effectively.",
+      "Developing and maintaining scalable web applications as a Full Stack Developer.",
+      "Built a feature-rich Cosmetics E-commerce Platform using Sanity CMS, Clerk authentication, and Geolocation API for dynamic currency switching.",
+      "Deployed backend services on AWS Lambda for scalability and reliability.",
+      "Collaborating with cross-functional teams to deliver high-quality software solutions.",
     ],
   },
   {
-    company: "Trinity Technologies",
-    role: "Technical Trainer",
-    icon: teach,
-    period: "Aug 2022 - Jul 2023",
+    title: "Freelance Developer",
+    company: "Self-Employed",
+    icon: dev, // You may want to update the icon as needed
+    period: "Aug 2024 - Dec 2024",
     description: [
-      "Taught HTML, CSS, JavaScript, React, and Python to over 25 students.",
-      "Managed the entire training process, from preparing detailed notes to conducting students' final assessments.",
-      "Helped students build strong foundational skills and guided them through practical coding challenges.",
-      "This experience honed my communication, mentoring abilities, and deepened my understanding of core technologies.",
+      "Collaborated with clients to develop customized web solutions, ensuring alignment with their specific needs and business goals.",
+      "Designed and implemented responsive websites using Next.js, Tailwind CSS, Daisy UI, and TypeScript, with a focus on SEO optimization and user experience.",
+      "Built a German learning web application using Next.js, Tailwind CSS, Daisy UI, MongoDB, Cloudinary, and TypeScript, featuring admin authentication, a dashboard, and dynamic image upload functionality.",
+      "Provided services for Shopify store theme editing and SEO optimization for dropshippers.",
+      "Enhanced debugging and troubleshooting skills by resolving client-reported issues promptly and effectively.",
+    ],
+  },
+  {
+    title: "Junior Developer",
+    company: "Final Apps",
+    icon: dev, // You may want to update the icon as needed
+    period: "Feb 2024 - Aug 2024",
+    description: [
+      "Developed and maintained Shopify apps using React, Remix, Node.js, and Shopify Polaris.",
+      "Worked closely with the CTO, gaining valuable insights into best practices and modern development techniques.",
+      "Contributed to enhancing app performance and usability for better user experiences.",
+      "Acquired hands-on experience with Shopify app architecture and development workflows.",
+    ],
+  },
+  {
+    title: "Content Creator",
+    company: "CodeCoders (YouTube Channel)",
+    icon: dev, // You may want to update the icon as needed
+    period: "Mar 2024 - Present",
+    description: [
+      "Started a YouTube channel to help beginners learn programming concepts in an easy-to-understand way.",
+      "Published over 200+ tutorial videos, covering topics like C pattern printing, arrays in C, and Java OOP concepts.",
+      "Built a community of coding enthusiasts and regularly engaged with followers by addressing their learning needs.",
+      "Focused on creating high-quality content tailored to students and beginners.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer Trainee",
+    company: "Brototype",
+    icon: teach, // You may want to update the icon as needed
+    period: "Mar 2023 - Feb 2024",
+    description: [
+      "Developed multiple minor projects using MongoDB, Express.js, React.js, and Node.js (MERN stack).",
+      "Created a fully functional E-commerce website as a major project, incorporating user authentication and payment gateway integration.",
+      "Built a Hotel Booking Website with Mapbox integration for location services and Stripe for payment processing.",
+      "Worked collaboratively in a team environment and followed agile methodologies.",
+      "Built 2 major MERN stack projects and 10+ minor projects.",
+      "🧪 Hosted projects on: AWS EC2 Instance (hands-on with server setup & deployment), Vercel (Next.js hosting), Render (for full stack & automation experiments).",
+    ],
+  },
+  {
+    title: "Self Learning",
+    company: "Self Learning",
+    icon: dev, // You may want to update the icon as needed
+    period: "Sep 2022 - Mar 2023",
+    description: [
+      "Learned coding independently by watching YouTube tutorials and reading documentation.",
+      "Developed a small e-commerce website called 'Shopping-Cart' using JavaScript, Node.js, and Handlebars. Integrated PayPal for payment processing.",
+      "Built minor projects such as a React-based Netflix clone and a personal portfolio website using HTML and CSS.",
+      "Gained foundational knowledge in JavaScript, web development, and backend integration.",
     ],
   },
 ];

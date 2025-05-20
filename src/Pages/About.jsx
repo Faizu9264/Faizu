@@ -6,7 +6,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import bg from "../assets/aboutbg4.png";
-import aboutRight from "../assets/pic.png";
+import profile from "../assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -95,39 +95,16 @@ const About = () => {
             </Code>
             <Flex flexDir={"column"} px={2} gap={2}>
               <Code bg={"none"} color={"#33FFCC"} fontSize={20}>
-                Hello!..
+                Hello!
               </Code>
               <Code bg={"none"} color={"white"}>
-                Hi, I&apos;m Aneesha, a passionate software developer with over
-                a year of experience specializing in the
-                <span style={{ color: "#33FFCC" }}> MERN stack</span> .I have
-                hands-on experience with{" "}
-                <span style={{ color: "#33FFCC" }}>
-                  MongoDB, Express.js, React, Node.js{" "}
-                </span>
-                , and am familiar with{" "}
-                <span style={{ color: "#33FFCC" }}>blockchain</span>{" "}
-                technologies and{" "}
-                <span style={{ color: "#33FFCC" }}>React Native</span>.
+                Hi, I’m Faizu Rahman — Full Stack Developer and founder of <a href="https://codecoders.in/" target="_blank" style={{color:'#33FFCC',textDecoration:'underline'}}>CodeCoders.in</a>. I specialize in building AI-powered, developer-friendly web apps using Next.js, the MERN stack, and modern cloud platforms like AWS, Vercel, and Render.
               </Code>
               <Code bg={"none"} color={"white"}>
-                {" "}
-                I love taking on complex tasks and finding creative solutions to
-                challenging problems, especially when it comes to{" "}
-                <span style={{ color: "#33FFCC" }}>debugging</span> and
-                improving code.
+                I love solving real-world problems — from building online compilers, AI code reviewers, developer chatbots, and interview quiz tools, to creating reusable components like my own npm package for product tours <b>npm i onboarding-tour-faizu</b> <a href="https://www.npmjs.com/package/onboarding-tour-faizu" target="_blank" style={{color:'#33FFCC',textDecoration:'underline'}}>https://www.npmjs.com/package/onboarding-tour-faizu</a>.
               </Code>
               <Code bg={"none"} color={"white"}>
-                {" "}
-                I&apos;m constantly exploring new technologies and pushing
-                myself to grow as a developer. My goal is to{" "}
-                <span style={{ color: "#33FFCC" }}>keep learning</span> and
-                contribute to projects that have a meaningful impact.
-              </Code>
-              <Code bg={"none"} color={"white"}>
-                {" "}
-                When I&apos;m not coding, I enjoy reading books and diving into
-                art and crafts, which help me stay creative and inspired.
+                I’m also a content creator on YouTube (<a href="https://www.youtube.com/@CodeCodersYT" target="_blank" style={{color:'#33FFCC',textDecoration:'underline'}}>CodeCoders – in Malayalam</a>), where I share coding tips, project tutorials, and career advice for developers. I learn by building — and teach by doing.
               </Code>
             </Flex>
             <Code bg={"none"} color={"#33FFCC"}>
@@ -148,7 +125,7 @@ const About = () => {
                 height={{ lg: "300px", md: "250px", base: "200px" }}
                 width={{ lg: "300px", md: "250px", base: "200px" }}
                 borderRadius={"100%"}
-                src={aboutRight}
+                src={profile}
                 bg="linear-gradient(to top, #33FFCC, #111111 )" // Gradient background
                 boxShadow="
                   inset -8px -8px 15px rgba(255, 255, 255, 0.2), 
@@ -183,7 +160,7 @@ const About = () => {
               height={{ xl: "300px", md: "250px", base: "200px" }}
               width={{ xl: "300px", md: "250px", base: "200px" }}
               borderRadius={"100%"}
-              src={aboutRight}
+              src={profile}
               bg="linear-gradient(to top, #33FFCC, #111111 )" // Gradient background
               boxShadow="
                   inset -8px -8px 15px rgba(255, 255, 255, 0.2), 

@@ -1,22 +1,17 @@
 import { Flex, Text, Grid, Image, Divider } from "@chakra-ui/react";
 
 import bootstrap from "../assets/Skills/Bootstrap.png";
-import chakraUi from "../assets/Skills/chakraui.png";
 import css from "../assets/Skills/CSS3.png";
 import javascript from "../assets/Skills/js1.png";
-import ethereum from "../assets/Skills/ethereum.png";
 import express from "../assets/Skills/expressw.png";
 import figma from "../assets/Skills/Figma.png";
 import git from "../assets/Skills/Git.png";
 import github from "../assets/Skills/githubw.png";
 import html from "../assets/Skills/HTML5.png";
 import nodejs from "../assets/Skills/Nodejs.png";
-import python from "../assets/Skills/Python.png";
 import react from "../assets/Skills/React.png";
-import solidity from "../assets/Skills/Solidity.png";
 import vscode from "../assets/Skills/vsCode.png";
 import mongo from "../assets/Skills/MongoDB.png";
-import mysql from "../assets/Skills/MySQL.png";
 import { motion } from "framer-motion";
 import TypewriterText from "../Components/TypewriterText";
 
@@ -164,16 +159,11 @@ const skillData = [
   { icon: css, name: "CSS" },
   { icon: javascript, name: "Javascript" },
   { icon: bootstrap, name: "Bootstrap" },
-  { icon: chakraUi, name: "Chakra UI" },
   { icon: nodejs, name: "Node.js" },
   { icon: express, name: "Express.js" },
-  { icon: python, name: "Python" },
-  { icon: solidity, name: "Solidity" },
   { icon: mongo, name: "MongoDB" },
-  { icon: mysql, name: "MySQL" },
   { icon: figma, name: "Figma" },
   { icon: git, name: "Git" },
   { icon: github, name: "Github" },
   { icon: vscode, name: "VSCode" },
-  { icon: ethereum, name: "Ethereum" },
 ];

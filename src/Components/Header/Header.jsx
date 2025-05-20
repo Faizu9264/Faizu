@@ -1,6 +1,5 @@
-import { Flex, Icon, Image, Spacer, Tooltip, Link } from "@chakra-ui/react";
+import { Flex, Icon, Spacer, Tooltip, Link, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import logo from "../../assets/vector.png";
 import { IoHomeSharp, IoPerson } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
 import { FaCogs } from "react-icons/fa";
@@ -44,15 +43,15 @@ const Header = () => {
       position={{ base: "fixed", md: "relative" }}
       bottom={{ base: 2, md: "" }}
     >
-      {/* Logo */}
-      <Image
-        src={logo}
-        alt="logo"
-        w={100}
-        h={38}
-        objectFit={"contain"}
+      {/* Logo or Name */}
+      <Text
+        fontSize={{ md: 28, base: 22 }}
+        fontWeight={700}
+        color="#33FFCC"
         display={{ base: "none", md: "block" }}
-      />
+      >
+        Faizu Rahman
+      </Text>
       <Spacer display={{ base: "none", md: "block" }} />
       {/* Nav tabs */}
       <Flex gap={{ md: 10, base: 10 }} m={"auto"}>
