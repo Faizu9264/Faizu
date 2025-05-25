@@ -2,7 +2,7 @@ import { Button, Flex, Icon, Image, Spacer, Text } from "@chakra-ui/react";
 import { BsArrowDown, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import right from "../assets/homeright.png";
-import resume from "../assets/Faizu_Resume.pdf"; // Update with your resume filename if available
+import resume from "../assets/FaizuRahman_Resume(MAY-2025).pdf"; // Update with your resume filename if available
 import Titlename from "../Components/TitleName/Titlename";
 import { motion } from "framer-motion";
 
@@ -11,7 +11,7 @@ const Home = () => {
     const pdfUrl = resume;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Faizu_Resume.pdf"; // specify the filename
+    link.download = "FaizuRahman_Resume(MAY-2025).pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
